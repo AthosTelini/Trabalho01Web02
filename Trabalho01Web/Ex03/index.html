@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Analisador de números</h1>
+    </header>
+    <section>
+        <div>Numero de 1 a 100: <input type="number" name="fnum" id="fnum">
+        <input type="button" value="Adicionar" id="btnAdd" onclick="adicionar()"> <br> <br>
+        <select name="flista" id="flista" size="6" ></select>
+        <br>
+        <button onclick="mostrarTotal()">Mostrar Total de Elementos</button>
+        <button onclick="mostrarMaior()">Mostrar Maior Numero da Lista</button>
+        <button onclick="mostrarMenor()">Mostrar Menor Numero da Lista</button>
+        <button onclick="mostrarSoma()">Mostrar Soma dos Valores</button>
+        <button onclick="mostrarMedia()">Mostrar Média</button>
+    </div>
+    <div id="res">
+
+    </div>
+    </section>
+    <footer>
+        <p>Disciplina: Tecnologia de Desenvolvimento para Internet II</p>
+        <p>Professor: Emerson Assis de Carvalho</p>
+        <p>dev/dzn &copy; Athos Telini | <a href="https://github.com/AthosTelini" target="_blank">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

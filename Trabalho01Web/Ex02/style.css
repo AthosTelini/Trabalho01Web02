@@ -1,0 +1,32 @@
+body{
+    background-color:#54bdcf;
+    font: normal 15pt Arial;
+}
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+section{
+    background-color: rgb(228, 250, 242);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.301);
+}
+#txtl{
+    width: 112px;
+}
+button{
+    width: 30px;
+    padding: 5px; 
+    font-size: 13px; 
+    background-color:#54bdcf;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.411);
+
+}
+footer {
+    margin: 60px 0px;
+    font-size: 15px;
+    text-align: center; 
+    }

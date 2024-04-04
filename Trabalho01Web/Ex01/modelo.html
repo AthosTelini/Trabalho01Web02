@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body {
+            background-image: url('Sapinho/Dia.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 540px 960px;
+            background-color: antiquewhite;
+            font: normal 15pt Arial;
+            background-attachment: fixed; 
+            border-radius: 25px;
+        }
+        
+        h1 {
+            text-align: center;
+            width: auto;
+            padding-top: 20px; 
+            color: white;
+            margin: 0;
+            margin-left: 10px;
+            font-style: italic;
+        }
+
+        section {
+            padding: 35px;
+            padding-top: 55px;
+            width: 440px; 
+            margin: auto;
+            text-align: left; 
+            color: white;
+            padding-left: 20px;
+            
+        }
+        #msg{
+            font-size: 40px;
+        }
+
+        footer {
+        margin: 60px 0px;
+        font-size: 15px;
+        text-align: center; 
+        }
+    </style>
+</head>
+
+
+<body onload="carregar()">
+    
+    <h1>Hora do dia</h1>
+    
+    <section>
+        <div id="msg">Vai aparecer a mensagem</div>
+    </section>
+    <footer>
+        <p>Disciplina: Tecnologia de Desenvolvimento para Internet II</p>
+        <p>Professor: Emerson Assis de Carvalho</p>
+        <p>dev/dzn &copy; Athos Telini | <a href="https://github.com/AthosTelini" target="_blank">GitHub</a></p>
+    </footer>
+    <script>
+        function carregar(){
+            var msg = window.document.getElementById('msg')
+            var data = new Date()
+            var hora = data.getHours()
+            // var hora = 9
+            var dia = data.getDate()
+            
+            msg.innerHTML= `Agora são <br> <strong>${hora} horas</strong> <br>
+            Hoje é <strong> dia   ${dia}</strong> `
+
+            if (hora >= 0 && hora < 12) {
+                document.body.style.backgroundImage = "url('Sapinho/Dia.jpg')";
+                document.body.style.backgroundColor = '#FDFCC3'
+            } else if (hora >= 12 && hora <= 18) {
+                document.body.style.backgroundImage = "url('Sapinho/tarde.jpg')";
+                document.body.style.backgroundColor = '#85D3EF'
+            } else {
+                document.body.style.backgroundImage = "url('Sapinho/noite.jpg')";
+                document.body.style.backgroundColor = "#A86BB7"
+            }
+        }
+    </script>
+</body>
+</html>
